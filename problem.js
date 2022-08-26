@@ -248,4 +248,3 @@ const myStorage = {
   console.log(myStorage.carr?.outside.trunk);
 
 
-/* - [ ]  
