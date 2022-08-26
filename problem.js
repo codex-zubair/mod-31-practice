@@ -98,13 +98,58 @@ const arrow4 = (a,b)=>
 /* 
 - [ ]  ৪. [হোম ওয়ার্ক] একটু গুগলে সার্চ দাও: javascript function declaration vs arrow function তারপর কয়েকটা আর্টিকেল পড়ে বুঝার চেষ্টা করো। */
 
+
+/* // Normal Function
+let add = function (num1, num2) {
+    return num1 + num2;
+    }
+    
+    // Arrow Function
+    let add = (num1, num2) => num1 + num2;
+ */
+
+
 /* - [ ]  ৪.৫. জাভাস্ক্রিপ্ট এর var, let, const এর মধ্যে প্রার্থক্য কি? */
 
-/* - [ ]  ৫. অনেকগুলা সংখ্যার একটা array হবে। তারপর তোমার কাজ হবে array এর উপরে map ইউজ করে। প্রত্যেকটা উপাদানকে ৫ দিয়ে গুন্ করে গুনফল আরেকটা array হিসেবে রাখবে। পুরা কাজটা এক লাইনে হবে। */
 
+
+
+// !Problem 8
+
+/* - [ ]  ৫. অনেকগুলা সংখ্যার একটা array হবে।
+ তারপর তোমার কাজ হবে array এর উপরে map ইউজ করে। 
+ প্রত্যেকটা উপাদানকে ৫ দিয়ে গুন্ করে গুনফল আরেকটা array হিসেবে রাখবে। পুরা কাজটা এক লাইনে হবে। */
+
+const  arr = [11,22,3,3,4,5];
+
+value = arr.map(item=> item*5);
+
+console.log(value);
+
+
+// !problem 9
 /* - [ ]  ৬. [ চ্যালেঞ্জিং। গুগলে সার্চ দিয়ে বের করো ] অনেকগুলা সংখ্যার একটা array থেকে শুধু বিজোড় সংখ্যা বের করে নিয়ে আসার জন্য filter ইউজ করো */
 
+value2 = arr.filter(item=> item%2);
+console.log(value2);
+
+
+
+
+//! Problem 10
 /* - [ ]  ৭. একটা array এর মধ্যে অনেকগুলা অবজেক্ট আছে। সেখানে যেই অবজেক্ট এর price আছে ৫০০০ টেক্কা সেই অবজেক্টকে find দিয়ে বের করো।\ */
+
+let object3 = [
+    {potato: 'price', price:400},
+    {mango: 'price', price:500},
+    {banana: 'price', price:5000},
+]
+const value3 = object3.find(item=> item.price === 5000);
+console.log(value3);
+
+
+
+
 
 /* - [ ]  ৭.৫ [এক্সট্রা] জাভাস্ক্রিপ্ট এ array এর map, forEach, filter, find কোনটা দিয়ে কি হয়। সেটার একটা সামারি লিখে ফেলো। */
 /* 
